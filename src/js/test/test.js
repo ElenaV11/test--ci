@@ -1,4 +1,5 @@
 import levelHealth from '../level';
+import {expect, test} from '@jest/globals';
 
 test.each([
   ['Маг', 90, 'healthy'],
