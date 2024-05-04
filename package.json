@@ -33,8 +33,16 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "description": "",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/ei978gpxl4u6uttn?svg=true)](https://ci.appveyor.com/project/ElenaV11/test-ci)",
   "dependencies": {
     "core-js": "^3.37.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ElenaV11/test--ci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElenaV11/test--ci/issues"
+  },
+  "homepage": "https://github.com/ElenaV11/test--ci#readme"
 }
