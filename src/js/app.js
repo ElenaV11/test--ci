@@ -1,5 +1,10 @@
 // TODO: write your code here
-import levelHealth from './level';
+import sortHealth from './sort';
 
-levelHealth({ name: 'Маг', health: 90 });
+const heroes = [
+  { name: 'мечник', health: 10 },
+  { name: 'маг', health: 100 },
+  { name: 'лучник', health: 80 },
+];
 
+sortHealth(heroes);
