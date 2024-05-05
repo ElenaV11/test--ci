@@ -1,18 +1,12 @@
-import sortHealth from '../sort';
+import levelHealth from '../level';
 import {expect, test} from '@jest/globals';
 
-test('basic test', () => {
-  const heroList = [
-    { name: 'мечник', health: 10 },
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-  ];
-
-  const expected = [
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-    { name: 'мечник', health: 10 },
-  ];
-
-  expect(sortHealth([...heroList])).toEqual(expected);
+test.each([
+  ['Маг', 90, 'healthy'],
+  ['Маг', 51, 'healthy'],
+  ['Маг', 50, 'wounded'],
+  ['Маг', 10, 'critical'],
+])('testing levelHealth function with name %s, %i health', (name, health, expected) => {
+  const result = levelHealth({ name, health });
+  expect(result).toBe(expected);
 });
